@@ -1,9 +1,10 @@
 const PatientCard=()=>{
-
-
+    
+    const color={"0":"bg-red-300","1":"bg-blue-300","2":"bg-green-300","3":"bg-purple-300"}
     return(
-        <div className="shadow-md flex rounded-md overflow-hidden">
-            <div className="w-[2%] bg-blue-500 h-[100%]"></div>
+        <div className="relative shadow-md w-[45%] h-auto  flex rounded-md overflow-hidden">
+            <div className={`absolute top-0 left-0 w-[4px] h-full ${color[Math.floor((Math.random()*4))]} `}></div>
+            {/* <p>{Math.floor((Math.random()*4))}</p> */}
             <div className="p-4 w-[98%]" >
                 <h2 className="font-semibold text-lg ">
                     Hpyertension
