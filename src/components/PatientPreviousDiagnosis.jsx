@@ -1,4 +1,4 @@
-const PatientCard=()=>{
+const PatientPreviousDiagnosis=()=>{
     
     const color={"0":"bg-red-300","1":"bg-blue-300","2":"bg-green-300","3":"bg-purple-300"}
     return(
@@ -9,13 +9,14 @@ const PatientCard=()=>{
                 <h2 className="font-semibold text-lg ">
                     Hpyertension
                 </h2>
-                <div className="flex">
-                    <p className="text-md">John Smith</p><p className="text-gray-500">,37</p>
+                
+                <div className="flex justify-between">
+                    <p className="text-md">Dr Condom</p>
+                    <p className=" text-end font-semibold text-gray-400 text-xs" >20th Feb,2025</p>
                 </div>
             </div>
-            <p className=" font-semibold text-gray-400 text-xs" >20th Feb,2025</p>
         </div>
     )
 }
 
-export default PatientCard
+export default PatientPreviousDiagnosis

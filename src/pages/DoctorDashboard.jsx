@@ -1,15 +1,15 @@
 import {AiFillDashboard,AiFillProfile,AiOutlineSearch,AiOutlineQrcode, AiFillSetting} from 'react-icons/ai'
 import PatientCard from '../components/PatientCard'
-const DriverDashboard=()=>{
+const DoctorDashboard=()=>{
     return(
         <div className="m-auto flex shadow-2xl flex-row h-[100vh] w-[100vw] overflow-hidden">
-            <div className="h-[100%] w-[25%] bg-gray-200 p-7 pt-10 flex flex-col items-center">
+            <div className="h-[100%] w-[25%] bg-gray-100 p-7 pt-10 flex flex-col items-center">
 
-                <img className="rounded-full w-30 aspect-square object-cover m-3" src="https://image.lexica.art/full_jpg/ae706b4b-2621-4dd0-8239-19c37c37a1f5" alt="profile-picture" />
+                <img className="rounded-full w-30 aspect-square object-cover m-3" src="https://static.vecteezy.com/system/resources/previews/041/408/858/non_2x/ai-generated-a-smiling-doctor-with-glasses-and-a-white-lab-coat-isolated-on-transparent-background-free-png.png" alt="profile-picture" />
 
                 <p className="text-lg font-semibold mb-6 text-gray-800 ">Dr. Condom</p>
 
-                <div className='flex flex-col items-start' >
+                <div className='flex flex-col cursor-pointer items-start' >
                     <div className="my-3 w-full text-gray-500 font-semibold flex justify-start items-center space-x-2 text-xl">
 
                         <AiFillDashboard/>
@@ -17,14 +17,14 @@ const DriverDashboard=()=>{
                         <p className='text-sm' >Dashboard</p>
 
                     </div>
-                    <div className="my-3 w-full text-gray-500 font-semibold flex justify-start items-center space-x-2 text-xl">
+                    <div className="my-3 w-full cursor-pointer text-gray-500 font-semibold flex justify-start items-center space-x-2 text-xl">
 
                         <AiFillProfile/>
 
                         <p className='text-sm' >Patients</p>
                         
                     </div>
-                    <div className="my-3 w-full text-gray-500 font-semibold flex justify-start items-center space-x-2 text-xl">
+                    <div className="my-3 w-full cursor-pointer text-gray-500 font-semibold flex justify-start items-center space-x-2 text-xl">
 
                         <AiFillSetting/>
 
@@ -43,7 +43,7 @@ const DriverDashboard=()=>{
 
                         <input className=' width-[100%] outline-none text-xs ' type="text" placeholder='Search Patients' />
                     </div>
-                    <div className='h-9 w-9 bg-gray-200 rounded-full text-center items-center justify-center p-2.5'>
+                    <div className='cursor-pointer h-9 w-9 bg-gray-200 rounded-full text-center items-center justify-center p-2.5'>
                         <AiOutlineQrcode/>
                     </div>
                 </div>
@@ -78,4 +78,4 @@ const DriverDashboard=()=>{
     )
 }
 
-export default DriverDashboard
+export default DoctorDashboard
