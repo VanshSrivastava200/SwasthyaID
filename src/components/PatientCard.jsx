@@ -9,11 +9,11 @@ const PatientCard=()=>{
                 <h2 className="font-semibold text-lg ">
                     Hpyertension
                 </h2>
-                <div className="flex">
-                    <p className="text-md">John Smith</p><p className="text-gray-500">,37</p>
+                <div className="flex justify-between">
+                    <p className="text-md">John Smith,37</p>
+                    <p className=" font-semibold text-gray-400 text-xs" >20th Feb,2025</p>
                 </div>
             </div>
-            <p className=" font-semibold text-gray-400 text-xs" >20th Feb,2025</p>
         </div>
     )
 }

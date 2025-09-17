@@ -1,4 +1,5 @@
 import {AiFillDashboard,AiFillProfile,AiOutlineSearch,AiOutlineQrcode, AiFillSetting} from 'react-icons/ai'
+import {TbLayoutDashboardFilled} from 'react-icons/tb'
 import PatientCard from '../components/PatientCard'
 const DoctorDashboard=()=>{
     return(
@@ -12,7 +13,7 @@ const DoctorDashboard=()=>{
                 <div className='flex flex-col cursor-pointer items-start' >
                     <div className="my-3 w-full text-gray-500 font-semibold flex justify-start items-center space-x-2 text-xl">
 
-                        <AiFillDashboard/>
+                        <TbLayoutDashboardFilled/>
 
                         <p className='text-sm' >Dashboard</p>
 
@@ -37,13 +38,13 @@ const DoctorDashboard=()=>{
 
             <div className="h-[100%] w-[75%] bg-white">
                 <div className='p-6 border-b-1 border-gray-200 flex w-full h-[13%] justify-between'>
-                    <div className='w-[50%] flex justify-start space-x-2 px-3 items-center bg-gray-200 h-9 rounded-full px-2'>
+                    <div className='w-[50%] overflow-hidden flex justify-start space-x-2 px-3 items-center bg-gray-200 h-9 rounded-full '>
 
-                        <AiOutlineSearch/>
+                        <AiOutlineSearch className='w-[20px] h-full '/>
 
-                        <input className=' width-[100%] outline-none text-xs ' type="text" placeholder='Search Patients' />
+                        <input className=' h-full w-[calc(100%-20px)] outline-none text-xs ' type="text" placeholder='Search Patient' />
                     </div>
-                    <div className='cursor-pointer h-9 w-9 bg-gray-200 rounded-full text-center items-center justify-center p-2.5'>
+                    <div className=' flex cursor-pointer h-9 w-9 bg-gray-200 rounded-full items-center justify-center'>
                         <AiOutlineQrcode/>
                     </div>
                 </div>
