@@ -24,8 +24,8 @@ const PatientDetails = () => {
   };
 
   return (
-    <div className="m-auto flex shadow-2xl flex-row h-[100vh] w-[90vw] overflow-y-scroll">
-      <div className="h-[100%] w-[25%] bg-white p-7 pt-10 flex flex-col items-center">
+    <div className="m-auto flex shadow-2xl flex-row h-[100vh] w-[90vw] no-scrollbar overflow-y-scroll">
+      <div className="h-[100%] w-[25%] border-r border-gray-200 bg-white p-7 pt-10 flex flex-col items-center">
         <img
           className="rounded-full w-30 aspect-square object-cover m-3"
           src="https://media.istockphoto.com/id/185117418/photo/medical-patient-side-profile-facing-right.jpg?s=612x612&w=0&k=20&c=yR1t-G_VVY-wy3kSwmvfn4orsEQtQe2S0XiFue8kpw0="
@@ -98,7 +98,7 @@ const PatientDetails = () => {
         <div className="h-[87%] w-full p-6">
           <h1 className="text-2xl font-semibold mb-2">Previous Diagnoses</h1>
 
-          <div className=" flex items-center   flex-wrap gap-4 overflow-y-scroll h-[95%] w-[100%]">
+          <div className=" flex items-center   flex-wrap gap-4 no-scrollbar overflow-y-scroll h-[95%] w-[100%]">
             <PatientPreviousDiagnosis />
             <PatientPreviousDiagnosis />
             <PatientPreviousDiagnosis />
